@@ -33,6 +33,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "ant-design-vue": "^1.7.0",
     "axios": "^0.20.0",
     "dotenv": "^8.2.0",
     "vue": "^2.6.12",

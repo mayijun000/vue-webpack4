@@ -7,8 +7,7 @@
  * @returns  random int
  */
 function setTheme(type, isCache = false) {
-    isCache && localStorage.setItem("WINDOWS_THEME", type)
-    window.document.documentElement.setAttribute('data-theme', type)
+   
 }
 
 export {
