@@ -10,11 +10,7 @@ import Axios from '@/api'
 Vue.use(Antd);
 Vue.prototype.$Axios = Axios
 new Vue({
-    el: "#app",
     router,
     store,
-    components: {
-        App,
-    },
-    template: "<App/>"
-});
+    render: h => h(App)
+}).$mount('#app');

@@ -1,0 +1,50 @@
+html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+body, button, div, fieldset, figure, form, h1, h2, h3, h4, h5, h6, i, img, input, label, legend, li, ol, p, table, td, th, tr, ul {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #fff;
+    color: #2c3e50;
+    font: .875em/1.42858 Microsoft Yahei,sans-serif;
+	font-family: Microsoft Yahei,sans-serif!important;
+	min-height: 100vh;
+	background-size: cover;
+}
+a, button, input {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    outline-style: none;
+}
+input {
+    height: 30px;
+}
+a {
+    text-decoration: none;
+    color: #7f8c8d;
+}
+input, textarea {
+    box-sizing: border-box;
+    border: none;
+    resize: none;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: Microsoft Yahei,Arial,sans-serif;
+    border-radius: 5px;
+    color: #2c3e50;
+}
+img {
+    border: none;
+}
+* {
+    box-sizing: border-box;
+	user-select: auto;
+}
+.font-medium, .font-regular,.font-bold {
+    font-weight: 400;
+    font-style: normal;
+}
