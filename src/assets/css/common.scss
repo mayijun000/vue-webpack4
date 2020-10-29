@@ -54,6 +54,14 @@ img {
     font-weight: 600;
     font-style: normal;
 }
+svg:not(:root) {
+    overflow: hidden;
+}
+.loadings {
+    background-image: url(https://wimg.bigbigwork.com/p/images/loading02.gif);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
 @media screen and (max-width: 2399px) and (min-width: 1710px){
 	.recommend_container {
 	    width: 1680px;

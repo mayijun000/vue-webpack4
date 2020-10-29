@@ -63,11 +63,23 @@
 					<div class="content-desc"><span class="desc-topic">行业</span> <span class="desc-text">插画漫画</span></div>
 				</div>
 			</a></div>
-		<div class="load-more">加载更多</div>
+		<div class="load-more" @click="toPage()">加载更多</div>
 	</div>
 </template>
 
 <script>
+	export default {
+		data() {
+			return {}
+		},
+		methods: {
+			toPage() {
+				this.$router.push({
+					path: '/car_page'
+				});
+			}
+		},
+	}
 </script>
 
 <style lang="scss" scoped>
@@ -130,8 +142,9 @@
 					background: hsla(0, 0%, 58%, .1);
 					transition: opacity .1s ease-in-out;
 				}
+
 				&:hover:after {
-				    opacity: 1;
+					opacity: 1;
 				}
 
 				.recommend-imgbox {
@@ -228,22 +241,24 @@
 				}
 			}
 		}
+
 		.load-more {
-		    width: 450px;
-		    height: 60px;
-		    background: #ff1a1a;
-		    line-height: 60px;
-		    font-size: 24px;
-		    color: #fff;
-		    letter-spacing: 0;
-		    font-weight: 500;
-		    margin: 20px;
-		    text-align: center;
-		    cursor: pointer;
-		    margin-top: 42px;
-		    text-shadow: 0 2px 4px rgba(0,0,0,.3);
+			width: 450px;
+			height: 60px;
+			background: #ff1a1a;
+			line-height: 60px;
+			font-size: 24px;
+			color: #fff;
+			letter-spacing: 0;
+			font-weight: 500;
+			margin: 20px;
+			text-align: center;
+			cursor: pointer;
+			margin-top: 42px;
+			text-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+
 			&:hover {
-			    background: #e10600;
+				background: #e10600;
 			}
 		}
 	}
