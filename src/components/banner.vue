@@ -1,7 +1,9 @@
 <template>
-	<div class="banner-box"><input type="text" style="position: fixed;top: -1000px"> <input type="password" style="position: fixed;top: -1000px">
-		<div class="banner-background"><img width="100%" height="100%" src="https://xcx.bigbigwork.com/pimg/bannerbox%402x.jpg"
-			 style="object-fit: cover;"></div>
+	<div class="banner-box">
+		<input type="text" style="position: fixed;top: -1000px"> <input type="password" style="position: fixed;top: -1000px">
+		<div class="banner-background">
+			<img width="100%" height="100%" src="https://xcx.bigbigwork.com/pimg/bannerbox%402x.jpg" style="object-fit: cover;">
+		 </div>
 		<div class="banner-search">
 			<div class="unlogin-searchtitle"><span>找灵感&nbsp;&nbsp;&nbsp;上大作</span></div>
 			<div class="inputInBox">
@@ -20,7 +22,7 @@
 					 target="_blank" class="word font-regular">潮流插画</a><a href="/tupian/?w=%E5%A4%A7%E5%A0%82" target="_blank" class="word font-regular">大堂</a><a
 					 href="/tupian/?w=%E5%A2%A8%E7%BB%BF" target="_blank" class="word font-regular">墨绿</a></div>
 			</div>
-			<header-top></header-top>
+			<header-top :fixHeader="fixHeader"></header-top>
 		</div>
 	</div>
 </template>
@@ -31,6 +33,12 @@
 	  data () {
 	    return {
 	    }
+	  },
+	  props:{
+	  	fixHeader:{
+	  		type: Boolean,
+	  		default:false,
+	  	},
 	  },
 	  components:{
 		  headerTop
@@ -118,25 +126,6 @@
 						    height: 48px;
 						    position: relative;
 						    user-select: none;
-							.active {
-							    background: #ff4d4d;
-							    color: #fff;
-							    z-index: 10;
-							    box-shadow: none;
-								&:after {
-								    content: "";
-								    display: inline-block;
-								    position: absolute;
-								    left: 50%;
-								    transform: translateX(-50%);
-								    bottom: -12px;
-								    width: 0;
-								    height: 0;
-								    border-width: 6px;
-								    border-style: solid;
-								    border-color: #ff4d4d transparent transparent;
-								}
-							}
 							.first-tab, .sec-tab {
 							    background: #f0f0f0;
 							    color: #393939;
@@ -160,6 +149,26 @@
 							    background-size: 100% 100%;
 							    left: 100px;
 							}
+							.active {
+							    background: #ff4d4d;
+							    color: #fff;
+							    z-index: 10;
+							    box-shadow: none;
+								&:after {
+								    content: "";
+								    display: inline-block;
+								    position: absolute;
+								    left: 50%;
+								    transform: translateX(-50%);
+								    bottom: -12px;
+								    width: 0;
+								    height: 0;
+								    border-width: 6px;
+								    border-style: solid;
+								    border-color: #ff4d4d transparent transparent;
+								}
+							}
+							
 						}
 						.user-serach-input {
 						    width: 654px;

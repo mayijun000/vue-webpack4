@@ -5,10 +5,10 @@ import store from './store'
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 import "@/assets/css/common.scss";
-import Axios from '@/api'
+import axios from '@/api/query.js'
 
 Vue.use(Antd);
-Vue.prototype.$Axios = Axios
+Vue.prototype.$axios = axios
 new Vue({
     router,
     store,
